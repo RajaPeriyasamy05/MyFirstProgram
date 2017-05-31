@@ -34,11 +34,11 @@ public class ParameterWithTestNGXML {
         searchText.sendKeys(searchKey);
 
         System.out.println("Welcome ->"+author+" Your search key is->"+searchKey);
-        System.out.println("Thread will sleep now");
+        //System.out.println("Thread will sleep now");
         Thread.sleep(3000);
         System.out.println("Value in Google Search Box = "+searchText.getAttribute("value") +" ::: Value given by input = "+searchKey);
         //verifying the value in google search box
         AssertJUnit.assertTrue(searchText.getAttribute("value").equalsIgnoreCase(searchKey));
-
+        //System.out.println("Thread will sleep now");
     }
 }
